@@ -1,2 +1,2 @@
 # PersonalMusicSuggestor
-#test121212!
+#This program will reccomend music based on a set of questions
