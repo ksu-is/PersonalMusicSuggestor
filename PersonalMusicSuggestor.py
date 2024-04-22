@@ -10,3 +10,4 @@ def get_music_recommendation(score):
     else:
         return 
 
+#question ideas - mood based, instrument preference, instrumental or with vocalist, location, activity based?
