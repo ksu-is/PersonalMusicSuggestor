@@ -1,13 +1,18 @@
-#testing codespace
-def get_music_recommendation(score):
-#Determines music recommendation based on the score, NEXT ill input quiz questions and results ideas
-    if score < 3:
-        return 
-    elif score < 6:
-        return 
-    elif score < 9:
-        return 
-    else:
-        return 
+def get_playlist_recommendation(score):
+#Determines playlist recommendation based on the score.
+    if score['jazz_fusion'] >= max(score.values()):
+        return "Jazz Fusion Playlist: Includes Return to Forever, Weather Report, Mahuvishnu Orchestra."
+    elif score['prog_rock'] >= max(score.values()):
+        return "Prog Rock Playlist: Features Pink Floyd, Yes, King Crimson."
+    elif score['smooth_jazz'] >= max(score.values()):
+        return "Smooth Jazz Playlist: Offers tracks from George Benson, Masayoshi Takanaka, Dave Koz."
+    elif score['japanese_jazz'] >= max(score.values()):
+        return "Japanese Jazz Playlist: Features Casiopea, T-Square, Cortex."
 
-#question ideas - mood based, instrument preference, instrumental or with vocalist, location, activity based?
+def main():
+    questions = 
+        ("Do you enjoy music with a lot of instrumental complexity?", 'prog_rock', 'jazz_fusion'),
+        ("Do you prefer soothing melodies and smooth rhythms?", 'smooth_jazz', 'japanese_jazz'),
+        ("Are you interested in unique and innovative music styles?", 'jazz_fusion', 'japanese_jazz'),
+        ("Do you like epic and thematic music compositions?", 'prog_rock', 'smooth_jazz')
+?
